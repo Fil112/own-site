@@ -31,7 +31,7 @@ window.SITE_CONFIG = {
   projects: [
     {
       name: "ClickMT",
-      stack: ["Kotlin", "Android"],
+      stack: ["Kotlin", "Android", "Game"],
       description: "Мобильная игра-кликер.",
       links: [
         { label: "RuStore", url: "https://www.rustore.ru/catalog/app/mt.keylo.clickmt" }
