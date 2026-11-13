@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xkeylomt.space</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="hero">
+      <div class="domain-badge" id="domain-badge"></div>
+      <h1 id="nickname"></h1>
+      <p class="role" id="role"></p>
+      <p class="about" id="about"></p>
+      <div class="socials" id="socials"></div>
+    </header>
+
+    <main>
+      <section class="block">
+        <h2>Мои сайты</h2>
+        <div class="grid" id="sites-list"></div>
+      </section>
+
+      <section class="block">
+        <h2>Проекты</h2>
+        <div class="grid" id="projects-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="footer-copy"></span>
+    </footer>
+  </div>
+
+  <!-- Сначала грузим конфиг, потом рендер -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
