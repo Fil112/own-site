@@ -35,7 +35,7 @@ window.SITE_CONFIG = {
       stack: ["Unity", "C#", "Android"],
       description: "Мобильная игра-кликер, опубликованная в RuStore.",
       links: [
-        { label: "RuStore", url: "https://www.rustore.ru/catalog/search?query=ClickMT" }
+        { label: "RuStore", url: "https://www.rustore.ru/catalog/app/mt.keylo.clickmt" }
       ]
     },
     {
