@@ -50,7 +50,7 @@
     sitesBox.appendChild(card);
   });
 
-  // Проекты
+    // Проекты
   const projectsBox = document.getElementById("projects-list");
   cfg.projects.forEach((proj) => {
     const card = document.createElement("article");
@@ -60,13 +60,14 @@
       .map((t) => `<span class="tag">${escapeHtml(t)}</span>`)
       .join("");
 
-    let linksHtml = "";
-    if (proj.demoUrl) {
-      linksHtml += `<a href="${proj.demoUrl}" target="_blank" rel="noopener">Открыть →</a>`;
-    }
-    if (proj.repoUrl) {
-      linksHtml += `<a href="${proj.repoUrl}" target="_blank" rel="noopener">Исходники</a>`;
-    }
+    // Рендерим любые кнопки из массива links (Modrinth, RuStore, GitHub и т.д.)
+    const linksHtml = (proj.links || [])
+      .filter((link) => link.url) // пустые ссылки пропускаем
+      .map(
+        (link) =>
+          `<a href="${link.url}" target="_blank" rel="noopener">${escapeHtml(link.label)} →</a>`
+      )
+      .join("");
 
     card.innerHTML = `
       <div>
@@ -80,6 +81,7 @@
     `;
     projectsBox.appendChild(card);
   });
+
 
   document.getElementById("footer-copy").textContent =
     `© ${new Date().getFullYear()} ${cfg.profile.nickname} • ${cfg.profile.domain}`;
