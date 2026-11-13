@@ -7,8 +7,7 @@ window.SITE_CONFIG = {
     about: "Пишу код под Android, веб и игровые серверы. Здесь собраны мои основные площадки и пет-проекты.",
     socials: [
       { title: "GitHub", url: "https://github.com/Fil112/" },
-      { title: "Modrinth", url: "https://modrinth.com/user/Keylo/" },
-      { title: "RuStore", url: "https://www.rustore.ru/catalog/search?query=ClickMT" }
+      { title: "Modrinth", url: "https://modrinth.com/user/Keylo/" }
     ]
   },
 
@@ -32,8 +31,8 @@ window.SITE_CONFIG = {
   projects: [
     {
       name: "ClickMT",
-      stack: ["Unity", "C#", "Android"],
-      description: "Мобильная игра-кликер, опубликованная в RuStore.",
+      stack: ["Kotlin", "Android"],
+      description: "Мобильная игра-кликер.",
       links: [
         { label: "RuStore", url: "https://www.rustore.ru/catalog/app/mt.keylo.clickmt" }
       ]
@@ -43,7 +42,8 @@ window.SITE_CONFIG = {
       stack: ["Java", "Minecraft", "Plugin"],
       description: "Плагин для управления серверным чатом, форматированием и каналами.",
       links: [
-        { label: "Modrinth", url: "https://modrinth.com/project/" }
+        { label: "Modrinth", url: "https://modrinth.com/project/" },
+        { label: "Github", url: "https://github.com/" },
       ]
     },
     {
