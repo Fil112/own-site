@@ -75,7 +75,7 @@ window.SITE_CONFIG = {
     },
     {
       name: "PackMT",
-      stack: ["Minecraft", "Resource Pack"],
+      stack: ["Java", "Minecraft", "Plugin"],
       description: "Умный менеджер ресурс-паков для серверов Minecraft (1.16.5 - 1.20+) со встроенным HTTP-сервером и функцией автоматического слияния JSON-файлов и текстур.",
       links: [
         { label: "Modrinth", url: "https://modrinth.com/project/PackMT" },
@@ -93,7 +93,7 @@ window.SITE_CONFIG = {
     },
     {
       name: "Metel",
-      stack: ["Minecraft", "Modrinth"],
+      stack: ["Java", "Minecraft", "Plugin"],
       description: "Хардкорный атмосферный плагин для серверов Minecraft, который погружает игроков в суровые условия вечной зимы. Плагин полностью меняет генерацию биомов, ограничивает видимость плотным туманом, вводит механику обморожения и добавляет локальный чат для большего реализма.",
       links: [
         { label: "Modrinth", url: "https://modrinth.com/plugin/Metel" },
