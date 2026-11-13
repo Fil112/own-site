@@ -50,7 +50,7 @@
     sitesBox.appendChild(card);
   });
 
-    // Проекты
+      // Проекты
   const projectsBox = document.getElementById("projects-list");
   cfg.projects.forEach((proj) => {
     const card = document.createElement("article");
@@ -60,12 +60,16 @@
       .map((t) => `<span class="tag">${escapeHtml(t)}</span>`)
       .join("");
 
-    // Рендерим любые кнопки из массива links (Modrinth, RuStore, GitHub и т.д.)
-    const linksHtml = (proj.links || [])
-      .filter((link) => link.url) // пустые ссылки пропускаем
+    // Собираем массив кнопок (плюс фоллбэк на старый формат, если остался)
+    const links = proj.links ? [...proj.links] : [];
+    if (proj.demoUrl) links.push({ label: "Открыть", url: proj.demoUrl });
+    if (proj.repoUrl) links.push({ label: "GitHub", url: proj.repoUrl });
+
+    const linksHtml = links
+      .filter((item) => item.url && item.url.trim() !== "")
       .map(
-        (link) =>
-          `<a href="${link.url}" target="_blank" rel="noopener">${escapeHtml(link.label)} →</a>`
+        (item) =>
+          `<a href="${item.url}" target="_blank" rel="noopener">${escapeHtml(item.label)} →</a>`
       )
       .join("");
 
@@ -81,6 +85,7 @@
     `;
     projectsBox.appendChild(card);
   });
+
 
 
   document.getElementById("footer-copy").textContent =
