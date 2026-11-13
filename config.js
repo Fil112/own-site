@@ -5,10 +5,10 @@ window.SITE_CONFIG = {
     domain: "xkeylomt.space",
     role: "Разработчик —> Сайты, боты, плагины",
     about: "Пишу код под Android, веб и игровые серверы. Здесь собраны мои основные площадки и пет-проекты.",
-    // Ссылки под описанием (можно добавить сколько угодно)
     socials: [
       { title: "GitHub", url: "https://github.com/Fil112/" },
-      { title: "Modrinth", url: "https://modrinth.com/user/Keylo/" }
+      { title: "Modrinth", url: "https://modrinth.com/user/Keylo/" },
+      { title: "RuStore", url: "https://www.rustore.ru/catalog/search?query=ClickMT" }
     ]
   },
 
@@ -23,7 +23,7 @@ window.SITE_CONFIG = {
     {
       name: "Проект по литературе",
       url: "https://vk.xkeylomt.space",
-      description: "ВК страница  Скалозуба из произведения Грибоедова 'Горе от ума'.",
+      description: "ВК страница Скалозуба из произведения Грибоедова 'Горе от ума'.",
       status: "dev"
     }
   ],
@@ -31,18 +31,68 @@ window.SITE_CONFIG = {
   // Раздел "Проекты"
   projects: [
     {
-      name: "Project Alpha",
-      stack: ["Java", "Kotlin", "Android"],
-      description: "Мобильное приложение с нативным интерфейсом и локальной базой.",
-      repoUrl: "https://github.com/",
-      demoUrl: "" // если демо нет, оставь пустым — кнопка скроется
+      name: "ClickMT",
+      stack: ["Unity", "C#", "Android"],
+      description: "Мобильная игра-кликер, опубликованная в RuStore.",
+      links: [
+        { label: "RuStore", url: "https://www.rustore.ru/catalog/search?query=ClickMT" }
+      ]
     },
     {
-      name: "Server Core",
-      stack: ["Java", "Paper API"],
-      description: "Набор кастомных механик и утилит для сервера.",
-      repoUrl: "",
-      demoUrl: "https://xkeylomt.space"
+      name: "ChatMT",
+      stack: ["Java", "Minecraft", "Plugin"],
+      description: "Плагин для управления серверным чатом, форматированием и каналами.",
+      links: [
+        { label: "Modrinth", url: "https://modrinth.com/project/" }
+      ]
+    },
+    {
+      name: "AuthMT",
+      stack: ["Java", "Minecraft", "Plugin"],
+      description: "Плагин авторизации и защиты аккаунтов игроков на сервере.",
+      links: [
+        { label: "Modrinth", url: "https://modrinth.com/project/" }
+      ]
+    },
+    {
+      name: "CommandMT",
+      stack: ["Java", "Minecraft", "Plugin"],
+      description: "Набор полезных серверных команд и утилит для администрирования.",
+      links: [
+        { label: "Modrinth", url: "https://modrinth.com/project/" }
+      ]
+    },
+    {
+      name: "VaultMT",
+      stack: ["Java", "Minecraft", "Plugin"],
+      description: "Плагин для работы с экономикой и балансом на сервере.",
+      links: [
+        { label: "Modrinth", url: "https://modrinth.com/project/" }
+      ]
+    },
+    {
+      name: "SunShulkers",
+      stack: ["Java", "Minecraft", "Plugin"],
+      description: "",
+      links: [
+        { label: "Modrinth", url: "https://modrinth.com/project/" }
+      ]
+    },
+    {
+      name: "PackMT",
+      stack: ["Minecraft", "Resource Pack"],
+      description: "",
+      links: [
+        { label: "Modrinth", url: "https://modrinth.com/project/" }
+      ]
+    },
+    {
+      name: "Metel",
+      stack: ["Minecraft", "Modrinth"],
+      description: "Атмосферный проект для Minecraft.",
+      links: [
+        { label: "Modrinth", url: "https://modrinth.com/project/" }
+      ]
     }
   ]
 };
